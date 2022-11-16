@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Section: Design Block -->
+    
+<section class="background-radial-gradient overflow-hidden">
+    <style>
+        .content{
+            max-width: 500px;
+            margin: 500px;
+        }
+      .background-radial-gradient {
+        background-color: hsl(146, 100%, 73%) 75%,;
+        background-image: radial-gradient(650px circle at 0% 0%,
+        hsl(146, 100%, 78%) 75%,
+            hsl(146, 100%, 78%) 75%,
+            hsl(146, 100%, 78%) 75%,
+            hsl(146, 100%, 78%) 75%,
+          
+            transparent 100%),
+          radial-gradient(1250px circle at 100% 100%,
+           hsl(146, 100%, 78%) 75%,
+            hsl(146, 100%, 78%) 75%,
+            hsl(146, 100%, 78%) 75%,
+            hsl(146, 100%, 78%) 75%,
+          
+            transparent 100%);
+      }
+  
+      #radius-shape-1 {
+        height: 220px;
+        width: 220px;
+        top: -60px;
+        left: -130px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+  
+      #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -60px;
+        right: -110px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+  
+      .bg-glass {
+        background-color: hsla(146, 100%, 78%, 0.9) !important;
+        backdrop-filter: saturate(200%) blur(25px);
+      }
+    </style>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar bg-success navbar-fixed-center">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index" class="navbar-brand" style="color:rgb(0, 0, 0);">Expense Tracker</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="signin" style="color:black;font-size:20px;">Login</a></li>
+                <li ><a href="signup" style="color:black;font-size:20px;">Sign up</a></li>
+            </ul>           
+        </div>
+    </nav>
+    <br><br>
+    {% block body %}{% endblock %}
+
+  </body>
+    
